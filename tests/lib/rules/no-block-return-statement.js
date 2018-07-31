@@ -2,7 +2,7 @@ import { RuleTester } from 'eslint';
 
 import rule from '../../../lib/rules/no-block-return-statement';
 
-const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2018 } }); // You do have to tell eslint what js you're using
+const ruleTester = new RuleTester( { parserOptions: { ecmaVersion: 2018 } } ); // You do have to tell eslint what js you're using
 
 const errorObj = {
     message: 'No need for the `{`, `return` `}` syntax for an Arrow Function that only returns something.',
@@ -17,7 +17,7 @@ ruleTester.run( 'no-block-return-statement', rule, {
         `const complex2 = s =>
             s.split('').join(' ').toUpperCase()`,
         'const capitalize2 = v => v.toUpperCase()'
-    ].map( code => isString( code ) ? { code } : code ),
+    ],
     invalid: [
         `const ident = v => {
             return v

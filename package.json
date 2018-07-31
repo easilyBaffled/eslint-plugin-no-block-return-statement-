@@ -11,8 +11,10 @@
   "main": "lib/index.js",
   "scripts": {
     "precommit": "eslint --fix . && npm run test",
-    "test": "mocha -r esm tests --recursive",
-    "test:local": "ndb npm run test"
+    "test": "nyc mocha -r esm tests --recursive",
+    "test:local": "ndb npm run test",
+    "test:report": "nyc report --reporter=text-lcov | coveralls",
+    "test:stable": "npx --package=node-bin@stable -- npm test"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
@@ -22,9 +24,11 @@
     "eslint": "~5.2.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-standard": "^3.1.0",
     "esm": "^3.0.72",
     "husky": "^0.14.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   },
   "engines": {
     "node": ">=0.10.0"
