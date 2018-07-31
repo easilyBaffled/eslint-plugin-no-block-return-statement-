@@ -17,7 +17,7 @@
     "test:stable": "npx --package=node-bin@stable -- npm test"
   },
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "requireindex": "~1.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
