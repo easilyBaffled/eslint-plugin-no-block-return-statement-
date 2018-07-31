@@ -2,7 +2,7 @@
 
 Call out unecessary return statements
 
-[![Build Status](https://travis-ci.org/easilyBaffled/eslint-plugin-no-block-return-statement-.svg?branch=master)](https://travis-ci.org/easilyBaffled/eslint-plugin-no-block-return-statement-)
+[![Build Status](https://travis-ci.org/easilyBaffled/eslint-plugin-no-block-return-statement-.svg?branch=master)](https://travis-ci.org/easilyBaffled/eslint-plugin-no-block-return-statement-) [![Greenkeeper badge](https://badges.greenkeeper.io/easilyBaffled/eslint-plugin-no-block-return-statement-.svg)](https://greenkeeper.io/)
 
 ## Installation
 
